@@ -1,6 +1,6 @@
 ###Generating random pet for the new hostname
 resource "random_pet" "server" {
-  length = "1"
+  length    = "1"
   separator = "-"
 }
 
@@ -10,9 +10,9 @@ output "name" {
 }
 
 variable "lin-os" {
-    type = "string"
-    default = "lin"
-    description = "Name convention putting the OS in the name of the system"
+  type        = "string"
+  default     = "lin"
+  description = "Name convention putting the OS in the name of the system"
 }
 
 ###Generating hostname output with echo command  
